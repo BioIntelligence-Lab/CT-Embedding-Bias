@@ -14,7 +14,7 @@ Key findings of our study include:
 
 ### Dataset
 
-We utilized the National Lung Screening Trial (NLST) public dataset, which comprises 3D CT images of patients aged 55 to 74 along with their demographic information (age, sex, and race).
+We utilized the National Lung Screening Trial (NLST) public dataset, which comprises 3D CT images of patients aged 55 to 74 along with their demographic information (age, sex, and race). The train-tuning split is provided by the CT Foundation Tool.
 
 - **Training Dataset**: 10299 patients (52696 images)
 - **Tuning Dataset**: 2199 patients (11421 images)
@@ -25,7 +25,10 @@ The embeddings are precomputed by the CT Foundation Tool (https://colab.research
 
 Various conventional classifiers and regression models were trained on the embeddings:
 
-- **models**: Logistic Regression (simulated with a 1-layer MLP), Linear Support Vector Machine, Random Forest, Decision Tree
+- Logistic Regression (simulated with a 1-layer MLP)
+- Linear Support Vector Machine
+- Random Forest
+- Decision Tree
 
 Performance metrics included:
 - **Regression**: Root Mean Square Error (RMSE), Mean Absolute Error (MAE)
